@@ -1,6 +1,7 @@
 # froxy-proxy-example
 
-Sample Node/Express project demonstrating use of the 'froxy' npm module to easily implement a multi-origin proxy server.
+Sample Node/Express project demonstrating use of the 'froxy' npm module to easily implement
+a multi-origin proxy server.
 Some URLs are proxied to external hosts, while others are handled locally by the server.
 
 ## Usage
@@ -8,10 +9,28 @@ Some URLs are proxied to external hosts, while others are handled locally by the
 ```sh
 $ git clone https://github.com/leonardw/froxy-proxy-example.git
 $ cd froxy-proxy-example
-$ node start.js
 ```
 
 ## Demo
+
+### Single HTTP proxy server
+
+```sh
+$ node http-ex.js
+```
+
+In a web browser, visit URL (http://localhost:8000/wiki/Proxy_server)
+and observe the following debug information in console
+```
+Request: { host: 'localhost',
+  port: 8000,
+  protocol: 'http',
+  secure: false,
+  url: '/wiki/Proxy_server' }
+URL    : /wiki/Proxy_server
+Origin : http://en.wikipedia.org/wiki/Proxy_server
+```
+
 
 
 ##License
