@@ -16,10 +16,26 @@ $ cd froxy-proxy-example
 ### Single HTTP proxy server
 
 ```sh
-$ node http-ex.js
+$ node http-ex.js 
+HTTP proxy server running at http://localhost:8000
+CTRL + C to shutdown
 ```
 
-In a web browser, visit URL [http://localhost:8000/wiki/Proxy_server](http://localhost:8000/wiki/Proxy_server)
+In a web browser, visit URL [http://localhost:8000](http://localhost:8000)
+
+and observe the following debug information in console
+```
+Request: { host: 'localhost',
+  port: 8000,
+  protocol: 'http',
+  secure: false,
+  url: '/' }
+URL    : /
+Origin : http://en.wikipedia.org/
+```
+
+Visit URL [http://localhost:8000/wiki/Proxy_server](http://localhost:8000/wiki/Proxy_server)
+
 and observe the following debug information in console
 ```
 Request: { host: 'localhost',
@@ -30,6 +46,27 @@ Request: { host: 'localhost',
 URL    : /wiki/Proxy_server
 Origin : http://en.wikipedia.org/wiki/Proxy_server
 ```
+
+
+### Multiple HTTP servers sharing the same proxy
+
+```sh
+$ node multihttp-ex.js 
+Multiple HTTP proxy servers running at
+http://localhost:8000
+http://localhost:8001
+CTRL + C to shutdown
+```
+
+In a web browser, visit both URLs
+
+[http://localhost:8000/wiki/Proxy_server](http://localhost:8000/wiki/Proxy_server)
+
+[http://localhost:8001/wiki/Proxy_server](http://localhost:8001/wiki/Proxy_server)
+
+
+
+
 
 
 
