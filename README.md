@@ -19,7 +19,7 @@ $ cd froxy-proxy-example
 $ node http-ex.js
 ```
 
-In a web browser, visit URL [http://localhost:8000/wiki/Proxy_server]
+In a web browser, visit URL [http://localhost:8000/wiki/Proxy_server](http://localhost:8000/wiki/Proxy_server)
 and observe the following debug information in console
 ```
 Request: { host: 'localhost',
