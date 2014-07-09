@@ -15,6 +15,7 @@ $ cd froxy-proxy-example
 
 ### Single HTTP proxy server
 
+Start the single-proxy demo by running the following
 ```sh
 $ node http-ex.js 
 HTTP proxy server running at http://localhost:8000
@@ -50,6 +51,7 @@ Origin : http://en.wikipedia.org/wiki/Proxy_server
 
 ### Multiple HTTP servers sharing the same proxy
 
+Start the multi-proxy demo by running the following
 ```sh
 $ node multihttp-ex.js 
 Multiple HTTP proxy servers running at
@@ -65,9 +67,21 @@ In a web browser, visit both URLs
 [http://localhost:8001/wiki/Proxy_server](http://localhost:8001/wiki/Proxy_server)
 
 
+### Express app with multi-origin proxy depending on incoming URL
 
+Start the Express proxy demo by running the following
+```sh
+$ node express-ex.js 
+Express server listening on port 8000
+```
 
+In a web browser, visit the following URLs
 
+[http://localhost:8000](http://localhost:8000)
+
+[http://localhost:8000/wiki/Proxy_server](http://localhost:8000/wiki/Proxy_server)
+
+[http://localhost:8000/github/froxy](http://localhost:8000/github/froxy)
 
 
 ##License
