@@ -67,9 +67,9 @@ In a web browser, visit both URLs
 [http://localhost:8001/wiki/Proxy_server](http://localhost:8001/wiki/Proxy_server)
 
 
-### Express app with multi-origin proxy depending on incoming URL
+### Express (v4) application with multi-origin proxying
 
-Start the Express proxy demo by running the following
+Start the [Express](http://expressjs.com)-powered proxy demo by running the following
 ```sh
 $ node express-ex.js 
 Express server listening on port 8000

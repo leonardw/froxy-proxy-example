@@ -1,13 +1,13 @@
 {
 	"name": "froxy-proxy-example",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"description": "Sample Node/Express project demonstrating use of the 'froxy' npm module to easily implement a multi-origin proxy server",
 	"scripts": {
 		"start": "node express-ex.js",
 		"test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
 	},
 	"dependencies": {
-		"express": "3.2.6",
+		"express": "4.6.1",
 		"froxy": "0.0.2"
 	},
 	"repository": "https://github.com/leonardw/froxy-proxy-example.git",
